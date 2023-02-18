@@ -16,7 +16,7 @@ import Parentt_Details from './components/Admin/Parents/ParentInfo';
 import DrNavbar from './components/Doctor_Login/DrNavbar'; 
 import OrphanUMe from './components/Doctor_Login/OrphanUMe'
 import DrProfile from './components/Doctor_Login/DrProfile';
-import Parent_Profile from './components/Parent_Login/Parent_Profile';
+
 import AddPhotoGallery from './components/Admin/AddPhotoGallery';
 import Donation from './components/Admin/Donation';
 import AddMission from './components/Admin/AddMission';
@@ -36,6 +36,11 @@ import EditOrphans from './components/Admin/Orphans/EditOrphans';
 import ListOrphans from './components/Admin/Orphans/ListOrphans';
 import HeaderOrphans from './components/Admin/Orphans/HeaderOrphans';
 import OrphanDashboard from './components/Admin/Orphans/OrphanDashboard';
+import BeParent from './components/Parent_Login/BeParent';
+import ParentNavbar from './components/Parent_Login/ParentNavbar';
+import Parent_Login_ContactUs from './components/Parent_Login/Parent_Login_ContactUs';
+import Profile from './components/Parent_Login/Profile'
+import ViewOrphan from './components/Parent_Login/ViewOrphan'
 
 
 function App() {
@@ -72,12 +77,18 @@ function App() {
     
 
       {/* Parent pages */}
-      <Route path='/p_profile' element={< Parent_Profile/>} />
+     
       <Route path="/AddParents" element={<AddParents/>}/>
       <Route path="/EditParents" element={<EditParents/>}/>
       <Route path="/ListParents" element={<ListParents/>}/>
       <Route path="/HeaderParents" element={<HeaderParents/>}/>
       <Route path="/ParentDashboard" element={<ParentDashboard/>}/>
+      <Route exact path="/Parent_Login_ContactUs" element={<Parent_Login_ContactUs/>} />
+    <Route exact path="/Profile" element={<Profile/>}/>
+    <Route exact path="/Logout" element={<BeParent/>}/>
+    <Route exact path="/BeParent" element={<BeParent/>}/>
+    <Route exact path="/ViewOrphan" element={<ViewOrphan/>}/>
+    
 
       {/*Orphan Pages*/}
       <Route path="/OrphanDashboard" element={<OrphanDashboard/>}/>

@@ -17,6 +17,7 @@ class drOrphanCard extends Component {
   render() {
     return (
       <div className="bg-white p-6 rounded-lg shadow-lg">
+        console.log(this.props)
         <h3 className="font-medium text-xl mb-4">Name: {this.props.name}</h3>
         <p className="text-sm font-light mb-2">Age: {this.props.age}</p>
         <p className="text-sm font-light mb-2">Organization: {this.props.organization}</p>
